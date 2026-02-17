@@ -1,0 +1,102 @@
+.priorityArea {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.radioButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.label {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.text {
+  color: var(--neutral-800);
+}
+
+.realRadio {
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.customRadio {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.customRadioOne:hover {
+  background-color: var(--neutral-300);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.realRadio:checked + .customRadioOne {
+  box-shadow: var(--box-shadow-default);
+  background: var(--neutral-200);
+}
+
+.realRadio:focus-visible + .customRadioOne {
+  outline-offset: 2px;
+  outline: 2px solid var(--neutral-900);
+  background: var(--neutral-300);
+}
+
+.customRadioTwo:hover {
+  background-color: var(--secondary-100);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.realRadio:checked + .customRadioTwo {
+  box-shadow: var(--box-shadow-default);
+  background: var(--secondary-0);
+}
+
+.realRadio:focus-visible + .customRadioTwo {
+  outline-offset: 2px;
+  outline: 2px solid var(--neutral-900);
+  background: var(--secondary-100);
+}
+
+.customRadioThree:hover {
+  background-color: var(--primary-100);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.realRadio:checked + .customRadioThree {
+  box-shadow: var(--box-shadow-default);
+  background: var(--primary-0);
+}
+
+.realRadio:focus-visible + .customRadioThree {
+  outline-offset: 2px;
+  outline: 2px solid var(--neutral-900);
+  background: var(--primary-100);
+}
+
+.iconOne {
+  fill: var(--neutral-600);
+}
+
+.iconTwo {
+  fill: var(--secondary-400);
+}
+
+.iconThree {
+  fill: var(--primary-400);
+}

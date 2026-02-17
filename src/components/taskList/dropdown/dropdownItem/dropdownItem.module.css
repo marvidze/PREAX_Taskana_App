@@ -1,0 +1,85 @@
+.dropdownItem {
+  display: grid;
+  grid-template-columns: 24px 1fr 24px;
+  border-radius: 4px;
+  padding: 8px;
+  width: 203px;
+  height: 40px;
+  gap: 8px;
+  text-align: start;
+  color: var(--neutral-800);
+}
+
+.dropdownItemHeader {
+  display: grid;
+  grid-template-columns: 24px 1fr 24px;
+  border-radius: 4px;
+  padding: 8px;
+  width: 203px;
+  height: 40px;
+  gap: 8px;
+  cursor: initial;
+  text-align: start;
+  color: var(--neutral-800);
+}
+
+.dropdownItem:hover {
+  background-color: var(--neutral-200);
+}
+
+.dropdownItem:focus-visible {
+  outline: 2px solid var(--neutral-900);
+  outline-offset: 2px;
+  background-color: var(--neutral-200);
+}
+
+.iconItem {
+  fill: var(--neutral-800);
+}
+
+.dropdown {
+  color: var(--neutral-600);
+  display: grid;
+  grid-template-columns: 24px 1fr 24px;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 8px 8px 8px 12px;
+  width: 210px;
+  height: 40px;
+  box-shadow: var(--box-shadow-default);
+  background: var(--neutral-200);
+  cursor: pointer;
+  text-align: start;
+}
+
+.dropdownSelected {
+  color: var(--neutral-800);
+}
+
+.dropdown:hover {
+  color: var(--neutral-800);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.dropdown:focus-visible {
+  color: var(--neutral-800);
+  outline: 2px solid var(--neutral-900);
+  outline-offset: 2px;
+  background-color: var(--neutral-200);
+}
+
+.icon {
+  fill: var(--neutral-600);
+}
+
+.dropdown:hover .icon {
+  fill: var(--neutral-800);
+}
+
+.dropdown:focus-visible .icon {
+  fill: var(--neutral-800);
+}
+
+.iconSelected {
+  fill: var(--neutral-800);
+}

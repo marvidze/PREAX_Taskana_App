@@ -1,0 +1,51 @@
+.navBar {
+  width: 205px;
+  height: 100%;
+  border-right: 1px solid var(--neutral-300);
+  background-color: var(--neutral-100);
+  padding-block: 24px;
+  padding-inline: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 24px;
+}
+
+.navBarItem {
+  cursor: pointer;
+  box-shadow: var(--box-shadow-default);
+  background-color: var(--neutral-800);
+  color: var(--neutral-0);
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  width: 100%;
+  min-width: 172px;
+  border-radius: 8px;
+  padding-left: 11px;
+  gap: 10px;
+  text-decoration: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.navBarItem:hover {
+  box-shadow: var(--box-shadow-hover);
+  background: var(--neutral-700);
+}
+
+.navBarItem:focus-visible {
+  border: 2px solid var(--neutral-0);
+  box-shadow: var(--box-shadow-hover);
+  background: var(--neutral-700);
+  outline: 2px solid var(--neutral-900);
+  outline-offset: 0px;
+}
+
+.textArea {
+  width: 172px;
+}
+
+.icon {
+  width: 24px;
+  fill: var(--neutral-0);
+}

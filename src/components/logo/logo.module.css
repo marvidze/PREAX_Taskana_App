@@ -1,0 +1,11 @@
+.logoImage {
+  cursor: pointer;
+  height: 40px;
+  width: 126px;
+}
+
+.logoImage:focus-visible {
+  border-radius: 8px;
+  outline: 2px solid var(--base-white);
+  outline-offset: 5px;
+}

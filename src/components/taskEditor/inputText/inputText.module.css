@@ -1,0 +1,55 @@
+.labelTaskName {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.requiredStar {
+  color: var(--primary-400);
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 360px;
+  max-height: 64px;
+  border-radius: 8px;
+  border: 2px solid var(--neutral-400);
+  padding: 16px 10px 16px 12px;
+  gap: 12px;
+}
+
+.labelTaskName:hover .inputWrapper {
+  border-color: var(--neutral-600);
+}
+
+.inputWrapper:focus-within {
+  border: 2px solid var(--neutral-800);
+}
+
+.inputTaskName {
+  text-overflow: ellipsis;
+  background-color: var(--neutral-100);
+  border: none;
+  width: 100%;
+  height: 100%;
+  color: var(--neutral-800);
+}
+
+.buttonXMark {
+  height: 24px;
+  width: 24px;
+}
+
+.iconXMark {
+  fill: var(--neutral-600);
+}
+
+.iconXMark:hover {
+  fill: var(--neutral-800);
+}

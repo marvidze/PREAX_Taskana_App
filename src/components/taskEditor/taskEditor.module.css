@@ -1,0 +1,103 @@
+.rightArea {
+  right: 0;
+  position: fixed;
+  height: calc(100vh - 64px);
+  width: 100%;
+  max-width: 400px;
+  display: grid;
+  grid-template-rows: 1fr 80px;
+  background-color: var(--neutral-100);
+  border-left: 1px solid var(--neutral-300);
+  z-index: 1000;
+  transition:
+    transform 0.4s ease-in-out,
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+}
+
+.rightAreaNone {
+  composes: rightArea;
+  transform: translateX(100%);
+}
+
+.contentScroll {
+  overflow-y: auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--neutral-100);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  padding: 22px;
+  color: var(--neutral-800);
+}
+
+.content {
+  padding: 0 24px 24px 24px;
+}
+
+.buttonArea {
+  min-height: 48px;
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  gap: 16px;
+}
+
+.footer {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  background-color: var(--neutral-100);
+  border-top: 1px solid var(--neutral-300);
+  padding: 16px 24px 16px 24px;
+}
+
+.headerText {
+  margin-left: 1px;
+  font-size: 32px;
+}
+
+.buttonTrash {
+  background-color: var(--neutral-200);
+  box-shadow: var(--box-shadow-default);
+}
+
+.buttonTrash:hover {
+  background-color: var(--primary-400);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.buttonTrash:focus-visible {
+  box-shadow: var(--box-shadow-hover);
+  background-color: var(--primary-400);
+  outline: 2px solid var(--neutral-800);
+  outline-offset: 2px;
+}
+
+.buttonTrash:active {
+  box-shadow: none;
+  background-color: var(--primary-300);
+}
+
+.iconTrash {
+  fill: var(--primary-400);
+}
+
+.buttonTrash:hover .iconTrash {
+  fill: var(--base-white);
+}
+
+.buttonTrash:active .iconTrash {
+  fill: var(--base-white);
+}
+
+.buttonTrash:focus-visible .iconTrash {
+  fill: var(--base-white);
+}

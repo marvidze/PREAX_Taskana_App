@@ -1,0 +1,9 @@
+.mainContainer {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  margin: 0 auto;
+  overflow-y: auto;
+  justify-content: center;
+  border-left: 1px solid var(--neutral-300);
+}

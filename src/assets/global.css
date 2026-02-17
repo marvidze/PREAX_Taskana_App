@@ -1,0 +1,98 @@
+@import "./normalize.css";
+@import "./variables.css";
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("./fonts/SourceSans3-VariableFont_wght.woff2") format("woff2-variations");
+  font-weight: 400 600 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  transition-property: outline, background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+h1 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.25;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33333;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33333;
+  margin: 0;
+}
+
+.body-lg-semibold {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.body-lg-regular {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.body-lg-bold {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.body-md-bold {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.body-md-semibold {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.body-md-regular {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.body-sm-semibold {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body-sm-regular {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}

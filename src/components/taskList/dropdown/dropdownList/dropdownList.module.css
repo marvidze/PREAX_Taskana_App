@@ -1,0 +1,18 @@
+.dropdownList {
+  position: absolute;
+  top: 50px;
+  max-height: 400px;
+  width: 211px;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 4px;
+  background-color: var(--neutral-0);
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+
+.openDropdownList {
+  transform: scaleY(1);
+  opacity: 1;
+}

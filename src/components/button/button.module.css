@@ -1,0 +1,78 @@
+.buttonHeader {
+  width: 118px;
+  height: 40px;
+  padding: 8px 16px 8px 12px;
+  background-color: var(--primary-400);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--box-shadow-default);
+}
+
+.buttonHeader:hover {
+  box-shadow: var(--box-shadow-hover);
+  background: var(--primary-500);
+}
+
+.buttonHeader:focus-visible {
+  outline: 2px solid var(--base-white);
+  outline-offset: 2px;
+}
+
+.buttonHeader:active {
+  background-color: var(--primary-300);
+}
+
+.buttonHeader:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.buttonSm {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonMd {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonPressed {
+  composes: buttonHeader;
+  background-color: var(--primary-300);
+}
+
+.buttonLoading {
+  justify-content: center;
+  background-color: var(--primary-300);
+}
+
+.text {
+  color: var(--base-white);
+}
+
+.iconLoading {
+  stroke: var(--base-white);
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,122 @@
+.button {
+  min-width: 96px;
+  height: 48px;
+  padding: 12px 16px 12px 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.dark {
+  composes: button;
+  background-color: var(--neutral-800);
+  box-shadow: var(--box-shadow-default);
+}
+
+.light {
+  composes: button;
+  background-color: var(--neutral-200);
+  box-shadow: var(--box-shadow-default);
+}
+
+.dark:hover:not(:disabled) {
+  box-shadow: var(--box-shadow-hover);
+  background: var(--neutral-700);
+}
+
+.light:hover:not(:disabled) {
+  box-shadow: var(--box-shadow-hover);
+  background: var(--neutral-300);
+}
+
+.dark:focus-visible {
+  outline-offset: 2px;
+  outline: 2px solid var(--neutral-900);
+}
+
+.light:focus-visible {
+  outline-offset: 2px;
+  outline: 2px solid var(--neutral-900);
+}
+
+.dark:active {
+  background-color: var(--neutral-600);
+  box-shadow: none;
+}
+
+.light:active {
+  background-color: var(--neutral-100);
+  box-shadow: none;
+}
+
+.darkPressed {
+  composes: button;
+  background-color: var(--neutral-700);
+}
+
+.lightPressed {
+  composes: button;
+  background-color: var(--neutral-300);
+  box-shadow: var(--box-shadow-default);
+}
+
+.darkLoading {
+  composes: button;
+  background-color: var(--neutral-600);
+  box-shadow: var(--box-shadow-default);
+}
+
+.lightLoading {
+  composes: button;
+  background-color: var(--neutral-100);
+  box-shadow: var(--box-shadow-default);
+}
+
+.light:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.dark:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.textLight {
+  color: var(--neutral-800);
+}
+
+.textDark {
+  color: var(--neutral-0);
+}
+
+.light:disabled + textLight {
+  opacity: 50%;
+}
+
+.dark:disabled + textDark {
+  opacity: 50%;
+}
+
+.iconLightLoading {
+  stroke: var(--neutral-800);
+  animation: rotate 1s linear infinite;
+}
+
+.iconDarkLoading {
+  stroke: var(--neutral-0);
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

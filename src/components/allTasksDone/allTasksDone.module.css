@@ -1,0 +1,23 @@
+.content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+  padding-bottom: 8px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+  text-align: center;
+  color: var(--neutral-800);
+}
+
+.text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33333;
+}

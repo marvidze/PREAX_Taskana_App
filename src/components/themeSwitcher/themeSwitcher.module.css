@@ -1,0 +1,74 @@
+.switcher {
+  position: relative;
+  background-color: var(--base-800);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 76px;
+  border-radius: 8px;
+  padding: 4px;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.switcher:focus-visible {
+  border-radius: 8px;
+  outline: 2px solid var(--base-white);
+  outline-offset: 1px;
+}
+
+.switcher::after {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-400);
+  border-radius: 4px;
+  left: 4px;
+  padding: 4px;
+  width: 32px;
+  height: 32px;
+  z-index: 1;
+  transition:
+    transform 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  box-shadow: var(--box-shadow-default);
+}
+
+.switcher:focus-visible::after {
+  background-color: var(--base-white);
+}
+
+.switcher.dark::after {
+  transform: translateX(36px);
+}
+
+.switcher:hover::after {
+  background-color: var(--base-white);
+}
+
+.switcher:focus-visible .currentIcon {
+  fill: var(--base-900);
+}
+
+.switcher:hover .currentIcon {
+  fill: var(--base-900);
+}
+
+.iconArea {
+  border-radius: 4px;
+  padding: 4px;
+  width: 32px;
+  height: 32px;
+  z-index: 2;
+}
+
+.currentIcon {
+  fill: var(--base-white);
+  z-index: 2;
+}
+
+.disableIcon {
+  fill: var(--base-600);
+  z-index: 2;
+}
